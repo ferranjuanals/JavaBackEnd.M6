@@ -9,7 +9,10 @@ public class Wheel {
 	private double diameter;
 
 	
-	public Wheel(String brand, double diameter) {
+	public Wheel(String brand, double diameter) throws Exception{
+		// Llançar excepció si el diametre de la roda és inferior a 0.4 o superior a 4
+		if(diameter<0.4 || diameter>4) throw new Exception();
+		
 		this.brand = brand;
 		this.diameter = diameter;
 	}

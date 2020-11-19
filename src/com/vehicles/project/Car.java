@@ -4,7 +4,7 @@ import java.util.List;
 
 public class Car extends Vehicle {
 
-	public Car(String plate, String brand, String color) {
+	public Car(String plate, String brand, String color) throws Exception{
 		super(plate, brand, color);
 	}
 
