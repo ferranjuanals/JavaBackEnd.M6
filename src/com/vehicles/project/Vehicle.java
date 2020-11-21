@@ -19,6 +19,22 @@ public abstract class Vehicle {
 		this.color = color;
 	}
 	
+
+	protected void addTwoWheels(List<Wheel> wheels) throws Exception {
+		if (wheels.size() != 2)
+			throw new Exception();
+
+		Wheel firstWheel = wheels.get(0);
+		Wheel secondWheel = wheels.get(1);
+
+		if (!firstWheel.equals(secondWheel))
+			throw new Exception();
+
+		this.wheels.add(firstWheel);
+		this.wheels.add(secondWheel);
+	}
+	
+	
 	// Crear funció checkPlate per determinar si la matrícula conté 4 números i 2 o 3 lletres
 	private static boolean checkPlate(String plate) {
 		// Inicialitzar els contadors i la variable retorn com a falsa
@@ -46,4 +62,5 @@ public abstract class Vehicle {
 		return check;
 	}
 	
+
 }

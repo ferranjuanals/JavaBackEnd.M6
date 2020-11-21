@@ -18,7 +18,7 @@ public class Wheel {
 	}
 	
 	// Mètode estàtic per a crear una List<Wheel> a partir de dos objectes Wheel
-	public static List<Wheel> twoWheels(Wheel rightWheel, Wheel leftWheel) {
+	public static List<Wheel> listTwoWheels(Wheel rightWheel, Wheel leftWheel) {
 		List<Wheel> twoWheels = Arrays.asList(rightWheel, leftWheel);
 		return twoWheels;
 	}
